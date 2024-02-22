@@ -9,4 +9,9 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  --
+  {
+    "cappyzawa/trim.nvim",
+    opts = {},
+  },
 }
