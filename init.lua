@@ -104,5 +104,10 @@ return {
         yaml = yaml_ft,
       },
     }
+    -- require("dap-go").setup {
+    --   external_config = {
+    --     enabled = true,
+    --   },
+    -- }
   end,
 }

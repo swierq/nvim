@@ -14,4 +14,8 @@ return {
     "cappyzawa/trim.nvim",
     opts = {},
   },
+  {
+    "leoluz/nvim-dap-go",
+    opts = {},
+  },
 }
