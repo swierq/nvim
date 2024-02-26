@@ -14,6 +14,7 @@ return {
         "tflint",
         "yamlls",
         "pylsp",
+        "bashls",
         -- {
         --   "yamlls",
         --   schemas = {
