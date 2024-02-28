@@ -18,4 +18,7 @@ return {
     "leoluz/nvim-dap-go",
     opts = {},
   },
+  {
+    "ThePrimeagen/harpoon",
+  },
 }

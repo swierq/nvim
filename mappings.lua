@@ -17,8 +17,18 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
-
-    -- mappings seen under group name "Buffer"
+    -- harpoon
+    -- ["<leader>xx"] = require("harpoon.mark").add_file(),
+    -- ["<leader>xd"] = require("harpoon.mark").rm_file(),
+    -- ["<leader>xm"] = require("harpoon.ui").toggle_quick_menu(),
+    -- ["<leader>xn"] = require("harpoon.ui").nav_next(),
+    -- ["<leader>xp"] = require("harpoon.ui").nav_prev(),
+    -- mappingsseen under group name "Buffer"
+    ["<leader>xa"] = { function() require("harpoon.mark").add_file() end, desc = "Harpoon add file." },
+    ["<leader>xd"] = { function() require("harpoon.mark").rm_file() end, desc = "Harpoon rm file." },
+    ["<leader>xm"] = { function() require("harpoon.ui").toggle_quick_menu() end, desc = "Harpoon quick menu." },
+    ["<leader>xn"] = { function() require("harpoon.ui").nav_next() end, desc = "Harpoon next file." },
+    ["<leader>xp"] = { function() require("harpoon.ui").nav_prev() end, desc = "Harpoon prev file." },
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(

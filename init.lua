@@ -105,6 +105,14 @@ return {
       },
     }
     require("dap-go").setup()
+    require("harpoon").setup {
+      global_settings = {
+        save_on_toggle = false,
+        save_on_change = true,
+      },
+    }
+
+    require("telescope").load_extension "harpoon"
     -- require("dap-go").setup {
     --   external_config = {
     --     enabled = true,
