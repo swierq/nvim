@@ -19,6 +19,19 @@ return {
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
     copilot_no_tab_map = true,
     copilot_assume_mapped = true,
+    go_highlight_structs = 1,
+    go_highlight_methods = 1,
+    go_highlight_functions = 1,
+    go_highlight_function_calls = 1,
+    go_highlight_function_parameters = 1,
+    go_highlight_operators = 1,
+    go_highlight_types = 1,
+    go_highlight_fields = 1,
+    go_highlight_build_constraints = 1,
+    go_highlight_generate_tags = 1,
+    go_highlight_format_strings = 1,
+    go_highlight_variable_declarations = 1,
+    go_highlight_variable_assignments = 1,
   },
 }
 -- If you need more control, you can use the function()...end notation
